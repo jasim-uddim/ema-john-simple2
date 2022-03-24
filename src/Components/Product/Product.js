@@ -19,7 +19,7 @@ const Product = ({ clickhandeler, product }) => {
           <small>Ratings: {ratings}stars</small>
         </p>
       </div>
-      <button onClick={clickhandeler} className="btn-cart">
+      <button onClick={() => clickhandeler(product)} className="btn-cart">
         <p className="btn-btn-text">Add To Cart</p>
         <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
       </button>
